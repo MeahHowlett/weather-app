@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+          <div class="row">
+            <div class="col-7">
+              <form id="search-form">
+                <input
+                  type="search"
+                  placeholder="Search for a city..."
+                  class="form-control"
+                  autofocus="on"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              
+            </div>
+            <div class="col-2">
+              <input
+                type="submit"
+                value="Search"
+                class="btn btn-dark rounded shadow"
+              />
+            </div>
+
+            <div class="col-2">
+              <input
+                type="submit"
+                value="Current"
+                class="btn btn-dark rounded shadow"
+                id="current-button"
+              />
+            </div>
+          </div>
+</form>
+          <div class="row">
+            <div class="col 6">
+              <img
+                src="images/sun-cloud.svg"
+                alt="Sun behind cloud"
+                class="sun-cloud"
+              />
+              <h1 id="city-name"><strong></strong></h1>
+
+              <h1> <span id="temperature">°C</span>
+      
+              </h1>     
+              <p id="weather-description"></p>
+              <br />
+              <div id="date-time">Wednesday 17:52</div>
+
+              <ul>
+
+                <li >🥵 Humidity: <span id="humidity"></span>%</li>
+
+                <li >💨 Wind: <span id="wind">  </span> km/h</li>
+              </ul>
+            </div>
+            <div class="col-5">
+              <div class="row">
+                <div
+                  class="card border-light mb-3 mt-4"
+                  style="max-width: 250px"
+                >
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="images/sun-cloud.svg"
+                        class="sun-cloud-icon"
+                        alt="Sun behind cloud"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-end">
+                        <h5 class="card-title">Thursday</h5>
+                        <p class="card-text text-end">24 °C</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-light mb-3" style="max-width: 250px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="images/sun-cloud.svg"
+                        class="sun-cloud-icon"
+                        alt="Sun behind cloud"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-end">
+                        <h5 class="card-title">Friday</h5>
+                        <p class="card-text text-end">23 °C</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-light mb-3" style="max-width: 250px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="images/sun-cloud.svg"
+                        class="sun-cloud-icon"
+                        alt="Sun behind cloud"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-end">
+                        <h5 class="card-title">Saturday</h5>
+                        <p class="card-text text-end">24 °C</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-light mb-3" style="max-width: 250px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="images/sun-cloud.svg"
+                        class="sun-cloud-icon"
+                        alt="Sun behind cloud"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-end">
+                        <h5 class="card-title">Sunday</h5>
+                        <p class="card-text text-end">26 °C</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-light mb-3" style="max-width: 250px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="images/sun-cloud.svg"
+                        class="sun-cloud-icon"
+                        alt="Sun behind cloud"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-end">
+                        <h5 class="card-title">Monday</h5>
+                        <p class="card-text text-end">27 °C</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <script src="src/index.js"></script>
+  </body>
+</html>

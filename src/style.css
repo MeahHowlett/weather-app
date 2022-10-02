@@ -1,0 +1,53 @@
+h1,
+h4,
+p {
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-align: left;
+}
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 22px;
+}
+ul {
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  background-color: white;
+  border-radius: 6px;
+  max-width: 200px;
+  margin-left: 25px;
+  margin-top: 10px;
+  padding-inline-start: 10px;
+  padding: 16px 16px;
+}
+input {
+  margin-left: 20px;
+}
+
+.units {
+  font-size: 40px;
+}
+#date-time {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+
+.weather-app {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  padding: 20px 10px 10px 10px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+.sun-cloud {
+  max-width: 200px;
+}
+.sun-cloud-icon {
+  max-width: 100px;
+  background: transparent;
+}
