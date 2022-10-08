@@ -32,7 +32,7 @@ input {
 .units {
   font-size: 40px;
 }
-#date-time {
+.date-time {
   font-size: 16px;
   text-transform: uppercase;
   padding-left: 30px;
