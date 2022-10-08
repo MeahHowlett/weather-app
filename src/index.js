@@ -45,7 +45,7 @@ function showWeather(response) {
   ).innerHTML = `<strong>${response.data.name}<strong>`;
   document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
-  )}°C `;
+  )} `;
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -82,3 +82,13 @@ function showCurrentLocation(event) {
 
 let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", showCurrentLocation);
+
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);

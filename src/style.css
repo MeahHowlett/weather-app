@@ -1,17 +1,17 @@
-h1,
-h4,
-p {
-  padding-left: 30px;
+body {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  text-align: left;
+  font-weight: 400;
 }
 h1 {
   font-size: 60px;
+  margin-left: 25px;
+  padding-top: 10px;
 }
 
 p {
   font-size: 22px;
+  margin-left: 25px;
+  padding-bottom: 0;
 }
 ul {
   list-style-type: none;
@@ -29,13 +29,14 @@ input {
   margin-left: 20px;
 }
 
-.units {
-  font-size: 40px;
+#temperature {
+  font-size: 60px;
+  margin-left: 25px;
 }
-.date-time {
-  font-size: 16px;
-  text-transform: uppercase;
-  padding-left: 30px;
+
+.units {
+  font-size: 20px;
+  position: relative;
 }
 
 .weather-app-wrapper {
@@ -49,17 +50,16 @@ input {
   padding: 20px;
   border-radius: 10px;
 }
-.sun-cloud {
-  max-width: 200px;
-}
-.sun-cloud-icon {
-  max-width: 100px;
-  background: transparent;
-}
+
 .source-code-info {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 16px;
   text-align: center;
   padding-top: 0;
+}
+
+.date-time {
+  margin-left: 25px;
+  font-size: 18px;
 }
