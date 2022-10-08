@@ -38,11 +38,16 @@ input {
   padding-left: 30px;
 }
 
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  padding-bottom: 0;
+}
+
 .weather-app {
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  padding: 20px 10px 10px 10px;
+  padding: 20px;
   border-radius: 10px;
-  max-width: 700px;
 }
 .sun-cloud {
   max-width: 200px;
@@ -55,6 +60,6 @@ input {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 16px;
-  margin-left: 110px;
-  padding-top: 10px;
+  text-align: center;
+  padding-top: 0;
 }
