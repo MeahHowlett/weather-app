@@ -11,9 +11,6 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", handleSubmit);
-
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -80,9 +77,6 @@ function showCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let currentButton = document.querySelector("#current-button");
-currentButton.addEventListener("click", showCurrentLocation);
-
 function showFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -99,6 +93,12 @@ function showCelsiusTemperature(event) {
   celsiusLink.classList.add("active");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSubmit);
+
+let currentButton = document.querySelector("#current-button");
+currentButton.addEventListener("click", showCurrentLocation);
 
 let celsiusTemperature = null;
 
