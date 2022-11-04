@@ -49,7 +49,7 @@ input {
   margin-left: 25px;
 }
 
-.units {
+#celsius {
   font-size: 20px;
   position: relative;
 }
@@ -77,16 +77,6 @@ input {
 .date-time {
   margin-left: 25px;
   font-size: 16px;
-}
-
-.units .active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-
-.units .active:hover {
-  text-decoration: none;
 }
 
 #weather-forecast {
